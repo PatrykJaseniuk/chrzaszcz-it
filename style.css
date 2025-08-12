@@ -1,0 +1,40 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #dfbf58;
+    animation: changeColor 10s linear infinite;
+    /* Hide scrollbars if image is slightly larger than viewport */
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #dfbf58;
+    }
+
+    25% {
+        background-color: #a8d8ea;
+    }
+
+    50% {
+        background-color: #f3eac2;
+    }
+
+    75% {
+        background-color: #f5b461;
+    }
+
+    100% {
+        background-color: #dfbf58;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ensures the image covers the entire area without distortion */
+}
